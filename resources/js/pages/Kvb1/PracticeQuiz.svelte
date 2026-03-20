@@ -72,6 +72,7 @@
     let questions = $state<Question[]>([]);
     let answers = $state<Record<string, unknown>>({});
     let results = $state<Record<string, Result>>({});
+    let currentIndex = $state(0);
     let summary = $state<{
         score: number;
         total_points: number;
@@ -79,6 +80,15 @@
         passing_score: number;
         passed: boolean;
     } | null>(null);
+
+    const currentQuestion = $derived(
+        questions.length > 0 ? questions[currentIndex] : null,
+    );
+    const currentResult = $derived(
+        currentQuestion ? results[currentQuestion.id] : null,
+    );
+    const isLastQuestion = $derived(currentIndex === questions.length - 1);
+    const isFirstQuestion = $derived(currentIndex === 0);
 
     function csrfToken(): string {
         return (
@@ -103,6 +113,7 @@
             answers = {};
             results = {};
             summary = null;
+            currentIndex = 0;
         } finally {
             loading = false;
         }
@@ -136,6 +147,18 @@
             );
         } finally {
             checking = false;
+        }
+    }
+
+    function previousQuestion(): void {
+        if (currentIndex > 0) {
+            currentIndex -= 1;
+        }
+    }
+
+    function nextQuestion(): void {
+        if (currentIndex < questions.length - 1) {
+            currentIndex += 1;
         }
     }
 
@@ -211,33 +234,20 @@
                         Oefentoets
                     </h1>
                     <p class="max-w-2xl text-sm text-slate-600 dark:text-slate-300">
-                        40 vragen uit het aangeleverde voorbeeldexamen, inclusief
-                        de plaatjes uit de PDF. De volgorde van de vragen en
-                        meerkeuze-opties wordt elke keer opnieuw geschud.
+                        Je krijgt steeds één vraag tegelijk. Aan het einde kun je
+                        alles in één keer nakijken.
                     </p>
                 </div>
 
-                <div class="flex flex-wrap gap-3">
-                    <button
-                        class="rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:bg-slate-400"
-                        onclick={startQuiz}
-                        disabled={loading}
-                    >
-                        {loading ? 'Bezig...' : questions.length === 0
-                            ? 'Start oefentoets'
-                            : 'Nieuwe toets'}
-                    </button>
-
-                    {#if questions.length > 0}
-                        <button
-                            class="rounded-xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-60 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-500"
-                            onclick={checkQuiz}
-                            disabled={checking}
-                        >
-                            {checking ? 'Nakijken...' : 'Nakijken'}
-                        </button>
-                    {/if}
-                </div>
+                <button
+                    class="rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:bg-slate-400"
+                    onclick={startQuiz}
+                    disabled={loading}
+                >
+                    {loading ? 'Bezig...' : questions.length === 0
+                        ? 'Start oefentoets'
+                        : 'Nieuwe toets'}
+                </button>
             </div>
 
             <div
@@ -319,12 +329,11 @@
             </section>
         {/if}
 
-        {#each questions as question, index (question.id)}
-            {@const result = results[question.id]}
+        {#if currentQuestion}
             <section
                 class={`rounded-3xl border bg-white p-6 shadow-sm dark:bg-slate-900 ${
-                    result
-                        ? result.score === result.punten
+                    currentResult
+                        ? currentResult.score === currentResult.punten
                             ? 'border-emerald-300 dark:border-emerald-800'
                             : 'border-rose-300 dark:border-rose-800'
                         : 'border-slate-200 dark:border-slate-800'
@@ -337,46 +346,49 @@
                         <p
                             class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400"
                         >
-                            Vraag {index + 1} van {questions.length} · origineel
-                            {question.nummer}
+                            Vraag {currentIndex + 1} van {questions.length} ·
+                            origineel {currentQuestion.nummer}
                         </p>
                         <h2 class="text-xl font-semibold text-slate-900 dark:text-white">
-                            {question.vraag}
+                            {currentQuestion.vraag}
                         </h2>
                     </div>
 
                     <div
                         class="rounded-2xl bg-slate-100 px-4 py-2 text-sm font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-200"
                     >
-                        {#if result}
-                            {result.score} / {question.punten} punten
+                        {#if currentResult}
+                            {currentResult.score} / {currentQuestion.punten}
+                            punten
                         {:else}
-                            {question.punten} punten
+                            {currentQuestion.punten} punten
                         {/if}
                     </div>
                 </div>
 
-                {#if question.afbeelding}
+                {#if currentQuestion.afbeelding}
                     <div
                         class="mb-5 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-950"
                     >
                         <img
-                            src={question.afbeelding}
-                            alt={`Afbeelding bij vraag ${question.nummer}`}
+                            src={currentQuestion.afbeelding}
+                            alt={`Afbeelding bij vraag ${currentQuestion.nummer}`}
                             class="w-full object-contain"
                         />
                     </div>
                 {/if}
 
-                {#if question.type === 'mcq' && question.opties}
+                {#if currentQuestion.type === 'mcq' && currentQuestion.opties}
                     <div class="grid gap-3">
-                        {#each question.opties as option (option.id)}
+                        {#each currentQuestion.opties as option (option.id)}
                             <label
                                 class={`flex cursor-pointer gap-3 rounded-2xl border px-4 py-3 text-sm transition ${
-                                    result
-                                        ? result.correct_option === option.id
+                                    currentResult
+                                        ? currentResult.correct_option ===
+                                            option.id
                                             ? 'border-emerald-300 bg-emerald-50 text-emerald-950 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-100'
-                                            : result.selected_option === option.id
+                                            : currentResult.selected_option ===
+                                                  option.id
                                               ? 'border-rose-300 bg-rose-50 text-rose-950 dark:border-rose-800 dark:bg-rose-950/40 dark:text-rose-100'
                                               : 'border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-950'
                                         : 'border-slate-200 hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:hover:border-slate-500 dark:hover:bg-slate-950'
@@ -384,12 +396,16 @@
                             >
                                 <input
                                     type="radio"
-                                    name={question.id}
+                                    name={currentQuestion.id}
                                     class="mt-0.5"
-                                    checked={answers[question.id] === option.id}
+                                    checked={answers[currentQuestion.id] ===
+                                        option.id}
                                     onchange={() =>
-                                        selectOption(question.id, option.id)}
-                                    disabled={Boolean(result)}
+                                        selectOption(
+                                            currentQuestion.id,
+                                            option.id,
+                                        )}
+                                    disabled={Boolean(currentResult)}
                                 />
                                 <span>{option.tekst}</span>
                             </label>
@@ -397,11 +413,12 @@
                     </div>
                 {/if}
 
-                {#if question.type === 'boolean' && question.stellingen}
+                {#if currentQuestion.type === 'boolean' &&
+                    currentQuestion.stellingen}
                     <div class="grid gap-4">
-                        {#each question.stellingen as statement (statement.id)}
+                        {#each currentQuestion.stellingen as statement (statement.id)}
                             {@const booleanResult =
-                                result?.stellingen?.find(
+                                currentResult?.stellingen?.find(
                                     ({ id }) => id === statement.id,
                                 )}
                             <div
@@ -439,20 +456,20 @@
                                         >
                                             <input
                                                 type="radio"
-                                                name={`${question.id}-${statement.id}`}
+                                                name={`${currentQuestion.id}-${statement.id}`}
                                                 checked={(answers[
-                                                    question.id
+                                                    currentQuestion.id
                                                 ] as Record<
                                                     string,
                                                     string
                                                 >)?.[statement.id] === value}
                                                 onchange={() =>
                                                     selectStatementAnswer(
-                                                        question.id,
+                                                        currentQuestion.id,
                                                         statement.id,
                                                         value as 'ja' | 'nee',
                                                     )}
-                                                disabled={Boolean(result)}
+                                                disabled={Boolean(currentResult)}
                                             />
                                             <span class="capitalize">{value}</span>
                                         </label>
@@ -463,11 +480,11 @@
                     </div>
                 {/if}
 
-                {#if question.type === 'ordering' && question.items}
+                {#if currentQuestion.type === 'ordering' && currentQuestion.items}
                     <div class="grid gap-3">
-                        {#each question.items as item}
+                        {#each currentQuestion.items as item}
                             {@const orderingResult =
-                                result?.items?.find(
+                                currentResult?.items?.find(
                                     ({ item: current }) => current === item,
                                 )}
                             <div
@@ -492,22 +509,22 @@
                                 <select
                                     class="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm dark:border-slate-700 dark:bg-slate-950"
                                     value={String(
-                                        (answers[question.id] as Record<
+                                        (answers[currentQuestion.id] as Record<
                                             string,
                                             number
                                         >)?.[item] ?? '',
                                     )}
                                     onchange={(event) =>
                                         selectOrderingPosition(
-                                            question.id,
+                                            currentQuestion.id,
                                             item,
                                             (event.currentTarget as HTMLSelectElement)
                                                 .value,
                                         )}
-                                    disabled={Boolean(result)}
+                                    disabled={Boolean(currentResult)}
                                 >
                                     <option value="">Kies positie</option>
-                                    {#each question.items as _, position}
+                                    {#each currentQuestion.items as _, position}
                                         <option value={position + 1}>
                                             {position + 1}
                                         </option>
@@ -518,23 +535,24 @@
                     </div>
                 {/if}
 
-                {#if result}
+                {#if currentResult}
                     <div
                         class="mt-5 rounded-2xl bg-slate-100 p-4 text-sm text-slate-700 dark:bg-slate-800 dark:text-slate-200"
                     >
-                        {#if result.type === 'mcq'}
+                        {#if currentResult.type === 'mcq'}
                             <p>
                                 Juiste antwoord:
                                 <span class="font-medium">
-                                    {result.correct_option?.toUpperCase()}.
-                                    {result.correct_option_text}
+                                    {currentResult.correct_option?.toUpperCase()}.
+                                    {currentResult.correct_option_text}
                                 </span>
                             </p>
                         {/if}
 
-                        {#if result.type === 'boolean' && result.stellingen}
+                        {#if currentResult.type === 'boolean' &&
+                            currentResult.stellingen}
                             <div class="grid gap-2">
-                                {#each result.stellingen as statement (statement.id)}
+                                {#each currentResult.stellingen as statement (statement.id)}
                                     <p>
                                         <span class="font-medium">
                                             {statement.tekst}
@@ -548,9 +566,10 @@
                             </div>
                         {/if}
 
-                        {#if result.type === 'ordering' && result.items}
+                        {#if currentResult.type === 'ordering' &&
+                            currentResult.items}
                             <div class="grid gap-2">
-                                {#each result.items as item (item.item)}
+                                {#each currentResult.items as item (item.item)}
                                     <p>
                                         <span class="font-medium">
                                             {item.item}
@@ -564,26 +583,53 @@
                             </div>
                         {/if}
 
-                        {#if result.uitleg}
+                        {#if currentResult.uitleg}
                             <p class="mt-3 border-t border-slate-200 pt-3 dark:border-slate-700">
                                 <span class="font-medium">Toelichting:</span>
-                                {result.uitleg}
+                                {currentResult.uitleg}
                             </p>
                         {/if}
                     </div>
                 {/if}
-            </section>
-        {/each}
 
-        {#if questions.length > 0}
-            <div class="flex justify-center pb-8">
-                <button
-                    class="rounded-xl border border-slate-300 px-5 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-900 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-500"
-                    onclick={startQuiz}
+                <div
+                    class="mt-6 flex flex-col gap-3 border-t border-slate-200 pt-6 md:flex-row md:items-center md:justify-between dark:border-slate-700"
                 >
-                    Opnieuw oefenen
-                </button>
-            </div>
+                    <div class="text-sm text-slate-500 dark:text-slate-400">
+                        Gebruik vorige/volgende om vraag voor vraag door de toets
+                        te lopen.
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <button
+                            class="rounded-xl border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-500"
+                            onclick={previousQuestion}
+                            disabled={isFirstQuestion}
+                        >
+                            Vorige vraag
+                        </button>
+
+                        {#if isLastQuestion}
+                            <button
+                                class="rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:bg-slate-400"
+                                onclick={checkQuiz}
+                                disabled={checking || summary !== null}
+                            >
+                                {checking ? 'Nakijken...' : summary
+                                    ? 'Nagekeken'
+                                    : 'Nakijken'}
+                            </button>
+                        {:else}
+                            <button
+                                class="rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-700 disabled:cursor-not-allowed disabled:bg-slate-400"
+                                onclick={nextQuestion}
+                            >
+                                Volgende vraag
+                            </button>
+                        {/if}
+                    </div>
+                </div>
+            </section>
         {/if}
     </div>
 </div>
