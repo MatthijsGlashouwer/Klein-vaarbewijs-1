@@ -21,7 +21,7 @@ class ImportKvb1Exam extends Command
         5 => ['page' => 3, 'height' => 260, 'width' => 480, 'y' => 70, 'x' => 650],
         7 => ['page' => 3, 'height' => 250, 'width' => 470, 'y' => 500, 'x' => 650],
         9 => ['page' => 3, 'height' => 270, 'width' => 480, 'y' => 1120, 'x' => 650],
-        10 => ['page' => 4, 'height' => 240, 'width' => 380, 'y' => 90, 'x' => 780],
+        10 => ['page' => 4, 'height' => 280, 'width' => 460, 'y' => 70, 'x' => 730],
         11 => ['page' => 4, 'height' => 480, 'width' => 620, 'y' => 430, 'x' => 0],
         17 => ['page' => 5, 'height' => 260, 'width' => 480, 'y' => 760, 'x' => 650],
         24 => ['page' => 7, 'height' => 360, 'width' => 450, 'y' => 100, 'x' => 0],
@@ -29,10 +29,10 @@ class ImportKvb1Exam extends Command
         27 => ['page' => 7, 'height' => 470, 'width' => 360, 'y' => 960, 'x' => 780],
         31 => ['page' => 8, 'height' => 220, 'width' => 360, 'y' => 940, 'x' => 780],
         32 => ['page' => 8, 'height' => 300, 'width' => 400, 'y' => 1100, 'x' => 760],
-        35 => ['page' => 9, 'height' => 250, 'width' => 480, 'y' => 650, 'x' => 650],
-        38 => ['page' => 10, 'height' => 260, 'width' => 360, 'y' => 120, 'x' => 820],
-        39 => ['page' => 10, 'height' => 220, 'width' => 420, 'y' => 650, 'x' => 760],
-        40 => ['page' => 10, 'height' => 300, 'width' => 420, 'y' => 930, 'x' => 760],
+        35 => ['page' => 9, 'height' => 340, 'width' => 560, 'y' => 590, 'x' => 660],
+        38 => ['page' => 10, 'height' => 320, 'width' => 420, 'y' => 100, 'x' => 760],
+        39 => ['page' => 10, 'height' => 300, 'width' => 520, 'y' => 620, 'x' => 700],
+        40 => ['page' => 10, 'height' => 360, 'width' => 520, 'y' => 900, 'x' => 700],
     ];
 
     public function handle(): int
