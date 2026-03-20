@@ -705,7 +705,7 @@
         "nummer": 28,
         "punten": 3,
         "uitleg": "Bij het oplossen van deze berekening kunt u het beste een schetsje op het kladpapier maken en daarin de afstanden vermelden. Stap 1. Trek eerst een lijn die de onderkant van de brug voorstelt . Stap 2. Trek dan een lijn die kanaalpeil (KP) voorstelt. Stap 3. Geef de verticale afstand tussen lijn 1 en 2 aan en noteer ‘12 dm’. Stap 4. Trek dan een lijn die NAP voorstelt: 2 dm boven het KP. Stap 5. Trek een lijn die de waterstand voorstel: 2 dm boven NAP. Stap 6. U kunt nu zien dat de afstand tussen de onderkant brug en het water 8 dm is. 1e onderkant brug: --------------------------------------------------------------- 3e 12 dm 6e 8 dm 5e water 4e NAP 2 dm 2 dm 2e kanaalpeil: ----------------------------------------------------------",
-        "afbeelding": null,
+        "afbeelding": "https://www.cbr.nl/upload/90f469c3-fd27-4ccd-9010-cd0b850c788f_image4372044053741090747.PNG",
         "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U vaart op een kanaal en nadert een brug. In de waterkaart staat: brug H 12. De doorvaarthoogte is gegeven in decimeters ten opzichte van het kanaalpeil (KP). KP = NAP - 2 dm. Op de peilschaal bij de brug ziet u dat de waterstand NAP + 2 dm is. Wat is nu de doorvaarthoogte?",

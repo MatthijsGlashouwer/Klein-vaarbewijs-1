@@ -27,6 +27,7 @@ class ImportKvb1Exam extends Command
         24 => 'https://www.cbr.nl/upload/55473719-b01d-4f56-922f-26fe8d3d9b04_image12862543411078347022.jpeg',
         26 => 'https://www.cbr.nl/upload/f0469426-f6ed-4234-bb7b-c2edc076da38_image17022819764617001985.jpeg',
         27 => 'https://www.cbr.nl/upload/80059315-f16f-4f38-8426-9ab2023f9942_image6023544700875225381.jpeg',
+        28 => 'https://www.cbr.nl/upload/90f469c3-fd27-4ccd-9010-cd0b850c788f_image4372044053741090747.PNG',
         31 => [
             'https://www.cbr.nl/upload/ffadcdaa-92bf-45a1-9e35-999e2f778125_image16616626647042290214.png',
             'https://www.cbr.nl/upload/51574c4f-2fc7-4f2a-95d1-b7231d9b3381_image45094639788572509.png',
