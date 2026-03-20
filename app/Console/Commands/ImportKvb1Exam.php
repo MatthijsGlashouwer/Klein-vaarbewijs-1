@@ -17,25 +17,25 @@ class ImportKvb1Exam extends Command
      * @var array<int, string|array<int, string>>
      */
     private const IMAGE_URLS = [
-        2 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-2.jpg',
-        5 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-5.jpg',
-        7 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-7.jpg',
-        9 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-9.jpg',
-        10 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-10.jpg',
-        11 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-11.jpg',
-        17 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-17.jpg',
-        24 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-24.jpg',
-        26 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-26.jpg',
-        27 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-27.jpg',
+        2 => 'https://www.cbr.nl/upload/e94776e2-cc48-416b-9bcf-50454b8ab108_image12779757616292015284.jpeg',
+        5 => 'https://www.cbr.nl/upload/d322d38e-b9eb-4350-bb3a-36c6c774c285_vraag5.jpg',
+        7 => 'https://www.cbr.nl/upload/8b5e785a-abdc-450c-8a78-8b46e4e78fa8_image9587512985988798585.png',
+        9 => 'https://www.cbr.nl/upload/a9ce701d-5fbc-413a-bbe5-73d73e189c37_image15932805479821047379.png',
+        10 => 'https://www.cbr.nl/upload/72ae5038-b630-4ffa-8719-8e8ed72af564_image311926536123105092.png',
+        11 => 'https://www.cbr.nl/upload/37dbec62-7fa7-4032-a550-5f04f02d8989_k1111V_V2.jpg',
+        17 => 'https://www.cbr.nl/upload/dc91cc3a-d9a7-48f1-ae9a-632a2be7209c_image11989864004680204890.jpeg',
+        24 => 'https://www.cbr.nl/upload/55473719-b01d-4f56-922f-26fe8d3d9b04_image12862543411078347022.jpeg',
+        26 => 'https://www.cbr.nl/upload/f0469426-f6ed-4234-bb7b-c2edc076da38_image17022819764617001985.jpeg',
+        27 => 'https://www.cbr.nl/upload/80059315-f16f-4f38-8426-9ab2023f9942_image6023544700875225381.jpeg',
         31 => [
-            'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-31-a.jpg',
-            'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-31-b.jpg',
+            'https://www.cbr.nl/upload/ffadcdaa-92bf-45a1-9e35-999e2f778125_image16616626647042290214.png',
+            'https://www.cbr.nl/upload/51574c4f-2fc7-4f2a-95d1-b7231d9b3381_image45094639788572509.png',
         ],
-        32 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-32.jpg',
-        35 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-35.jpg',
-        38 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-38.jpg',
-        39 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-39.jpg',
-        40 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-40.jpg',
+        32 => 'https://www.cbr.nl/upload/f5065b0b-1e0f-44e1-83ae-cb6b27482c68_image14680098661472120457.png',
+        35 => 'https://www.cbr.nl/upload/18bf4d82-b04e-4182-8dc1-a10616dee647_image18193239761225312987.png',
+        38 => 'https://www.cbr.nl/upload/3950501a-73ae-4e43-9cb6-f4d3ae1dfe90_image73356010018584339.jpeg',
+        39 => 'https://www.cbr.nl/upload/607accbc-d658-4be4-90e6-3dac4ed2d146_image1611557220440132604.png',
+        40 => 'https://www.cbr.nl/upload/2730b37d-c301-485d-9528-b8a97b8e2659_image16335964899091121054.png',
     ];
 
     public function handle(): int
