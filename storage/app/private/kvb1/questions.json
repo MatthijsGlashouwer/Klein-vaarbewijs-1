@@ -5,6 +5,7 @@
         "punten": 1,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Volgens de Scheepvaartverkeerswet is het verboden te varen als men teveel alcohol heeft gedronken. Voor wie geldt dit verbod?",
         "opties": [
@@ -28,7 +29,8 @@
         "nummer": 2,
         "punten": 1,
         "uitleg": "In het ‘Vaststellingsbesluit BPR’ staat waar het reglement geldt. Er staat ook waar het niet geldt omdat daar een ander reglement van kracht is. Zie ook de ’Afbakening’.",
-        "afbeelding": "/images/kvb1/page-02.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-2.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U vaart van Lith aan de Maas naar het Kanaal van St. Andries. U schut via de sluis (van St. Andries) naar de Waal. U vaart de Waal af en volgt aansluitend de Boven Merwede. Bij Gorinchem passeert u een sluis en vaart naar de Linge. Zie het plaatje. Met welk scheepvaartreglement of met welke scheepvaart-reglementen heeft u onderweg te maken?",
         "opties": [
@@ -57,6 +59,7 @@
         "punten": 1,
         "uitleg": "Artikel 1.10 lid 5 BPR (nieuw na wijziging in Stb.2015, 395) en art.1.11.",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U vaart met een klein motorschip met kajuit. Er is een marifoon aan boord. Volgens het Binnenvaartpolitiereglement (BPR) moeten bepaalde documenten aan boord zijn. In sommige gevallen is voldoende om op de laptop een digitale versie (voor onmiddellijk gebruik) aanwezig te hebben. Voor welke documenten geldt dat?",
         "opties": [
@@ -81,6 +84,7 @@
         "punten": 2,
         "uitleg": "Artikel 1.01 A15° en artikel 3.13 lid 1 BPR.",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Een klein schip met een lengte van 8 meter vaart onder zeil en op de motor. Welke navigatielichten moet het volgens het Binnenvaartpolitiereglement (BPR) 's nachts voeren?",
         "opties": [
@@ -104,7 +108,8 @@
         "nummer": 5,
         "punten": 2,
         "uitleg": "Artikel 3.25 lid 1a en 1b.",
-        "afbeelding": "/images/kvb1/page-03.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-5.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Een baggerwerktuig voert aan één kant een rode bol en aan de andere kant twee groene ruiten. Zie het plaatje. Wat betekent dit volgens het Binnenvaartpolitiereglement (BPR)?",
         "opties": [
@@ -133,6 +138,7 @@
         "punten": 1,
         "uitleg": "Artikel 4.02 lid 2 en Bijlage 6 onderdeel A.",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Een verzoek tot het bedienen van een beweegbare brug kan worden kenbaar gemaakt door een geluidssein. Welk sein is dit volgens het Binnenvaartpolitiereglement (BPR)?",
         "opties": [
@@ -156,7 +162,8 @@
         "nummer": 7,
         "punten": 2,
         "uitleg": "Artikel 4.06 lid 2 BPR. De marifoon is al verplicht wanneer het kleine schip is uitgerust met radar. Dus zeker ook bij het varen op radar.",
-        "afbeelding": "/images/kvb1/page-03.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-7.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Wat bepaalt het Binnenvaartpolitiereglement (BPR) ten aanzien van de marifoon?",
         "opties": [
@@ -181,6 +188,7 @@
         "punten": 3,
         "uitleg": "Artikel 6.02 BPR. ‘Andere schepen’ betekent ‘alle niet snelle schepen’ dus ook kleine schepen.",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Volgens het Binnenvaartpolitiereglement (BPR) moet een snel schip voorrang verlenen aan een ander schip. Moet dit onder alle omstandigheden?",
         "opties": [
@@ -204,7 +212,8 @@
         "nummer": 9,
         "punten": 3,
         "uitleg": "Artikel 6.07 lid 5 BPR.",
-        "afbeelding": "/images/kvb1/page-03.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-9.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Twee kleine schepen naderen elkaar bij een engte. Klein motorschip Fin vaart voor stroom. Klein zeilschip Lot zeilt over bakboordboeg. Gelijktijdige doorvaart is niet mogelijk. Zie het plaatje. Regelt het Binnenvaartpolitiereglement (BPR) dit? Zo ja, hoe?",
         "opties": [
@@ -228,7 +237,8 @@
         "nummer": 10,
         "punten": 3,
         "uitleg": "Bij de vaarregels kan er sprake zijn van ‘voorrang’ moeten verlenen en ‘medewerking’ moeten verlenen. Het gedrag op samenkomsten van een hoofdvaarwater met een nevenvaarwater of haven wordt geregeld in artikel 6.16 BPR. Het voorbeeld van vraag 10 wordt geregeld in artikel 6.16 lid 2 BPR. Daar staat dat het grote schip (Wil) (het BPR maakt hier geen onderscheid tussen motorschip of zeilschip) bij het uitvaren van het nevenvaarwater medewerking mag verlangen van een schip (Ger) op het hoofdvaarwater. Het maakt volgens het BPR in dit geval niet uit of het schip (Ger) op het hoofdvaarwater groot of klein is. Volgens artikel 6.03 lid 6 BPR moet het ‘uitvarende’ schip ervoor zorgen dat het schip op het hoofdvaarwater niet ‘plotseling en in sterke mate koers of snelheid moet wijzigen’. Hinderen mag dus, zolang dit ‘verantwoord’ gebeurt. De sleutelwoorden zijn ‘plotseling en in sterke mate’. Het schip op het hoofdvaarwater moet meewerken; dat staat in artikel 6.03 lid 7 BPR. De ‘medewerkingsregel’ staat naast de ‘voorrangsregel’. In de examenvragen wordt dat onderscheid strikt gevolgd. Daarom zijn de antwoorden -b-/-c-/-d- stuk voor stuk fout. Het gestelde in antwoord -b- komt in heel artikel 6.16 BPR niet voor. Het gestelde in antwoord -d- geldt alleen wanneer verkeersteken B.9 is geplaatst. Zie daarvoor artikel 6.16 lid 8 BPR. De ‘medewerkingsregel’ komt ook voor in artikel 6.13, 6.14 en 6.23 BPR.",
-        "afbeelding": "/images/kvb1/page-04.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-10.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Klein motorschip Ger vaart op een hoofdvaarwater en wil rechtdoor. Groot zeilschip Wil verlaat de haven en gaat daarna naar bakboord. Zie het plaatje. Wat bepaalt het Binnenvaartpolitiereglement (BPR)?",
         "opties": [
@@ -256,7 +266,8 @@
         "nummer": 11,
         "punten": 3,
         "uitleg": "Sleep de cijfers naar de juiste schepen. 1: Nel 2: Kim 3: Han",
-        "afbeelding": "/images/kvb1/page-04.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-11.jpg",
+        "afbeeldingen": [],
         "type": "ordering",
         "vraag": "Klein zeilschip Nel zeilt over stuurboordboeg langs stuurboordwal. Klein zeilschip Kim nadert met het zeil over bakboord voor Nel op tegengestelde koers. Klein motorschip Han nadert voor Nel over bakboord en voor Kim over stuurboord. Er bestaat gevaar voor aanvaring. Hoe is de volgorde van voorrang volgens het Binnenvaartpolitiereglement (BPR)?",
         "items": [
@@ -276,6 +287,7 @@
         "punten": 2,
         "uitleg": "Artikel 6.28 lid 9 -e- BPR.",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U ligt met uw schip gemeerd in een sluis. Mag u volgens het Binnenvaartpolitiereglement (BPR) uw schroef in werking hebben?",
         "opties": [
@@ -300,6 +312,7 @@
         "punten": 2,
         "uitleg": "Artikel 6.29 lid 3 BPR. Antwoord I: Nee. Artikel 4.06 lid 2 BPR. Antwoord II: Ja.",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "boolean",
         "vraag": "Hier volgen twee vragen over het varen bij slecht zicht op een vaarweg waar het Binnenvaartpolitiereglement (BPR) geldt.",
         "stellingen": [
@@ -323,6 +336,7 @@
         "punten": 2,
         "uitleg": "* Artikel 1.01 onder D 3° en 4° BPR.",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Hoofdstuk 7 Binnenvaartpolitiereglement (BPR) geeft voorschriften voor het stilliggen. Schip Anne is vastgevaren (zit aan de grond). Schip Bart drijft met motorpech zonder dat het ergens door wordt voortbewogen. Welk schip ligt stil of welke schepen liggen stil volgens het BPR?",
         "opties": [
@@ -351,6 +365,7 @@
         "punten": 2,
         "uitleg": "Artikel 8.06 lid 3 BPR.",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "De bestuurder van een snelle motorboot trekt daarmee een waterskiër. Wat bepaalt het Binnenvaartpolitiereglement (BPR)?",
         "opties": [
@@ -375,6 +390,7 @@
         "punten": 1,
         "uitleg": "Artikel 9.04 BPR, van kracht op RPR-gebied via artikel 2 lid 3 van het Vaststellingsbesluit BPR. In de Bijlage 15a BPR wordt de Lek niet genoemd. NB: Bij de laatste wijziging van het BPR (Stb.2015, 395) is de stuurboordwalplicht op de Waal en op de Boven-Rijn afgeschaft.",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U vaart op de rivier de Lek. Is er op die rivier een plaats in het vaarwater voorgeschreven?",
         "opties": [
@@ -398,7 +414,8 @@
         "nummer": 17,
         "punten": 1,
         "uitleg": "Artikel 3.13 lid 4 RPR. Let op: volgens artikel 3.13 lid 5 BPR is deze verlichting in BPR-gebied slechts toegestaan voor een klein zeilschip korter dan 7 meter.",
-        "afbeelding": "/images/kvb1/page-05.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-17.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U zeilt met een klein schip op een vaarwater waarop het Rijnvaartpolitiereglement (RPR) van kracht is. U vaart met een open zeilboot van 8 meter lang. Het is nacht en u voert een rondomschijnend wit licht in de top van de mast (zie plaatje). Verder heeft u een wit licht klaar liggen om de aandacht te trekken van naderende andere schepen. Wat is volgens het RPR juist?",
         "opties": [
@@ -423,6 +440,7 @@
         "punten": 3,
         "uitleg": "Uit artikel 6.02 lid 2 RPR blijkt dat kleine schepen onderling artikel 6.04 RPR (= gebruik blauw bord en wit flikkerlicht) niet mogen toepassen, dus antwoord a is fout. Uit lid 2 blijkt ook dat de regel van artikel 6.04 RPR niet geldt tussen groot en klein, dus antwoord b is fout.",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Wat bepaalt het Rijnvaartpolitiereglement (RPR) over het gebruik van blauw bord met wit flikkerlicht?",
         "opties": [
@@ -447,6 +465,7 @@
         "punten": 2,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Waarom moet een wierfilter worden geïnstalleerd?",
         "opties": [
@@ -475,6 +494,7 @@
         "punten": 3,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Hoe kan men bij het starten van een binnenboord-benzinemotor het brand- en explosiegevaar zoveel mogelijk voorkomen?",
         "opties": [
@@ -499,6 +519,7 @@
         "punten": 2,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Varen zonder reddingsvesten aan boord is erg onverantwoord. Wat is het advies over het minimale aantal reddingsvesten dat aan boord moet zijn van een klein schip?",
         "opties": [
@@ -523,6 +544,7 @@
         "punten": 3,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Een gasdetector is uitgerust met één of meer sensoren. Waar moeten deze sensoren worden geplaatst?",
         "opties": [
@@ -547,6 +569,7 @@
         "punten": 2,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U wilt voorkomen dat de opvarenden overboord kunnen vallen. Welke maatregel geeft daarvoor de beste bescherming?",
         "opties": [
@@ -570,7 +593,8 @@
         "nummer": 24,
         "punten": 2,
         "uitleg": "Het juiste antwoord is de ton rechtsonder.",
-        "afbeelding": "/images/kvb1/page-07.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-24.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Varend in het SIGNI-betonningssysteem nadert u een scheidingston aangevende: Vaarwateren van gelijk belang. Hoe ziet die ton eruit?",
         "opties": [
@@ -599,6 +623,7 @@
         "punten": 2,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Wat is het karakter van een schitterlicht (Fl)?",
         "opties": [
@@ -622,7 +647,8 @@
         "nummer": 26,
         "punten": 1,
         "uitleg": null,
-        "afbeelding": "/images/kvb1/page-07.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-26.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U ziet bij een brug een zogenaamde hoogteschaal. Zie het plaatje. Hoeveel onderdoorvaarthoogte wordt er aangegeven?",
         "opties": [
@@ -650,7 +676,8 @@
         "nummer": 27,
         "punten": 1,
         "uitleg": null,
-        "afbeelding": "/images/kvb1/page-07.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-27.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U ziet in de vaarweg een NAP-peilschaal. Zie het plaatje. Hoe hoog staat het water?",
         "opties": [
@@ -679,6 +706,7 @@
         "punten": 3,
         "uitleg": "Bij het oplossen van deze berekening kunt u het beste een schetsje op het kladpapier maken en daarin de afstanden vermelden. Stap 1. Trek eerst een lijn die de onderkant van de brug voorstelt . Stap 2. Trek dan een lijn die kanaalpeil (KP) voorstelt. Stap 3. Geef de verticale afstand tussen lijn 1 en 2 aan en noteer ‘12 dm’. Stap 4. Trek dan een lijn die NAP voorstelt: 2 dm boven het KP. Stap 5. Trek een lijn die de waterstand voorstel: 2 dm boven NAP. Stap 6. U kunt nu zien dat de afstand tussen de onderkant brug en het water 8 dm is. 1e onderkant brug: --------------------------------------------------------------- 3e 12 dm 6e 8 dm 5e water 4e NAP 2 dm 2 dm 2e kanaalpeil: ----------------------------------------------------------",
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U vaart op een kanaal en nadert een brug. In de waterkaart staat: brug H 12. De doorvaarthoogte is gegeven in decimeters ten opzichte van het kanaalpeil (KP). KP = NAP - 2 dm. Op de peilschaal bij de brug ziet u dat de waterstand NAP + 2 dm is. Wat is nu de doorvaarthoogte?",
         "opties": [
@@ -707,6 +735,7 @@
         "punten": 1,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Met welke term wordt windkracht 5 volgens Beaufort aangeduid?",
         "opties": [
@@ -731,6 +760,7 @@
         "punten": 2,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Op de weerkaart ziet u de isobaren in een bepaald gebied ver van elkaar liggen. Wat kunt u in dit gebied verwachten?",
         "opties": [
@@ -754,7 +784,11 @@
         "nummer": 31,
         "punten": 2,
         "uitleg": "BPR Bijlage 7, verkeerstekens A.15 en A.17.Volgens art.1.01 A.16 BPR is een zeilplank een ‘klein zeilschip voorzien van...’. Dus alles wat geldt voor een zeilschip geldt automatisch ook voor een zeilplank. Andersom niet.",
-        "afbeelding": "/images/kvb1/page-08.png",
+        "afbeelding": null,
+        "afbeeldingen": [
+            "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-31-a.jpg",
+            "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-31-b.jpg"
+        ],
         "type": "mcq",
         "vraag": "Wat is juist ten aanzien van de afgebeelde verkeerstekens?",
         "opties": [
@@ -778,7 +812,8 @@
         "nummer": 32,
         "punten": 2,
         "uitleg": "Zie de opschriften boven artikel 7.02, 7.03 en 7.04 BPR.",
-        "afbeelding": "/images/kvb1/page-08.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-32.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Wat is juist ten aanzien van het afgebeelde verkeersteken?",
         "opties": [
@@ -807,6 +842,7 @@
         "punten": 2,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Een schip met een linkse schroef loopt geen snelheid door het water. Het is windstil. Het roer staat midscheeps. Wat gebeurt er als de schroef op achteruit wordt gezet?",
         "opties": [
@@ -831,6 +867,7 @@
         "punten": 2,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U gaat ankeren op een meer. U besluit daar te overnachten. Het weerbericht zegt dat de wind uit dezelfde richting blijft waaien en ’s nachts in kracht zal toenemen. Wat is juist?",
         "opties": [
@@ -854,7 +891,8 @@
         "nummer": 35,
         "punten": 2,
         "uitleg": "Het waterpeil zakt aan stuurboord meer dan aan bakboord. Door de aanzuigende werking van de schroef zakt het waterpeil bij het stuurboordachterschip meer dan bij het stuurboordvoorschip. Daardoor zuigt het achterschip sterker aan dan het voorschip.",
-        "afbeelding": "/images/kvb1/page-09.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-35.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Een schip vaart dicht langs zijn stuurboordwal. Op een gegeven moment ontstaat sterke zuiging. Als de schipper niet ingrijpt zal het schip de oever raken. Op welke manier zuigt het schip naar de oever? Zie het plaatje.",
         "opties": [
@@ -879,6 +917,7 @@
         "punten": 2,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Wat is de 'dode hoek' van een schip?",
         "opties": [
@@ -903,6 +942,7 @@
         "punten": 2,
         "uitleg": null,
         "afbeelding": null,
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Een motorschip waarvan de motor is uitgevallen, wordt gesleept. Doordat er geen schroefwater langs het roer stroomt, luistert het schip slecht naar het roer. Op welke manier kan er onder rustige omstandigheden het beste worden gesleept?",
         "opties": [
@@ -926,7 +966,8 @@
         "nummer": 38,
         "punten": 2,
         "uitleg": null,
-        "afbeelding": "/images/kvb1/page-10.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-38.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "Een klein schip ligt afgemeerd op de manier zoals in het plaatje getekend. De lus van de rode lijn is belegd op een bolder stuurboordachter en de rode lijn is achterlangs een paal op de wal gelegd. De lijn is niet vastgemaakt op die paal maar loopt door naar een bolder stuurboord op het voordek. Daar is de lijn op die bolder vastgemaakt. Verder is de blauwe lijn vanaf het voorschip dwars uitgezet op een bolder aan de wal. Zie het plaatje. Wat is juist?",
         "opties": [
@@ -954,7 +995,8 @@
         "nummer": 39,
         "punten": 2,
         "uitleg": null,
-        "afbeelding": "/images/kvb1/page-10.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-39.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U vaart met uw schip recht voor de wind. U wilt afmeren en u kunt kiezen om dat aan stuurboord of aan bakboord te doen. Zie het plaatje. Het schip heeft een rechtse schroef. Welke wal kiest u en welke tros brengt u als eerste uit?",
         "opties": [
@@ -982,7 +1024,8 @@
         "nummer": 40,
         "punten": 3,
         "uitleg": "Bepaal eerst hoe met een rechtse schroef de kortste draaicirkel wordt bereikt. Bepaal daarna hoe de boegschroef daarbij helpen kan.",
-        "afbeelding": "/images/kvb1/page-10.png",
+        "afbeelding": "https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-40.jpg",
+        "afbeeldingen": [],
         "type": "mcq",
         "vraag": "U vaart met een motorboot die is voorzien van een rechtse schroef en een boegschroef. U moet keren, zonder achteruit te slaan, met een zo kort mogelijke draaicirkel. Zie het plaatje waarin het schroefwater van de voortstuwingsmotor en van de boegschroef is getekend. Kies de juiste mogelijkheid.",
         "opties": [

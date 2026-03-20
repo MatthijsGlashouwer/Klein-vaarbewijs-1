@@ -14,25 +14,28 @@ use Throwable;
 class ImportKvb1Exam extends Command
 {
     /**
-     * @var array<int, int>
+     * @var array<int, string|array<int, string>>
      */
-    private const IMAGE_PAGES = [
-        2 => 2,
-        5 => 3,
-        7 => 3,
-        9 => 3,
-        10 => 4,
-        11 => 4,
-        17 => 5,
-        24 => 7,
-        26 => 7,
-        27 => 7,
-        31 => 8,
-        32 => 8,
-        35 => 9,
-        38 => 10,
-        39 => 10,
-        40 => 10,
+    private const IMAGE_URLS = [
+        2 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-2.jpg',
+        5 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-5.jpg',
+        7 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-7.jpg',
+        9 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-9.jpg',
+        10 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-10.jpg',
+        11 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-11.jpg',
+        17 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-17.jpg',
+        24 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-24.jpg',
+        26 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-26.jpg',
+        27 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-27.jpg',
+        31 => [
+            'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-31-a.jpg',
+            'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-31-b.jpg',
+        ],
+        32 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-32.jpg',
+        35 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-35.jpg',
+        38 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-38.jpg',
+        39 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-39.jpg',
+        40 => 'https://www.cbr.nl/binaries/content/gallery/ccr/content-afbeeldingen/examenvragen/vb-kvb1-vraag-40.jpg',
     ];
 
     public function handle(): int
@@ -47,16 +50,11 @@ class ImportKvb1Exam extends Command
 
         $tempDirectory = storage_path('app/private/kvb1/import');
         $renderDirectory = $tempDirectory.'/pages';
-        $outputDirectory = public_path('images/kvb1');
         $datasetDirectory = storage_path('app/private/kvb1');
         $datasetPath = $datasetDirectory.'/questions.json';
 
         if (! is_dir($renderDirectory)) {
             mkdir($renderDirectory, 0777, true);
-        }
-
-        if (! is_dir($outputDirectory)) {
-            mkdir($outputDirectory, 0777, true);
         }
 
         if (! is_dir($datasetDirectory)) {
@@ -72,7 +70,6 @@ class ImportKvb1Exam extends Command
                 json_encode($questions, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR),
             );
 
-            $this->publishPageImages($renderDirectory, $outputDirectory);
         } catch (Throwable $exception) {
             $this->error($exception->getMessage());
 
@@ -80,7 +77,6 @@ class ImportKvb1Exam extends Command
         }
 
         $this->info("KVB1-vragenbank aangemaakt: {$datasetPath}");
-        $this->info("Afbeeldingen geëxporteerd naar: {$outputDirectory}");
 
         return self::SUCCESS;
     }
@@ -252,14 +248,15 @@ class ImportKvb1Exam extends Command
         preg_match('/^Vraag\s+\d+\.\s*(?:\*\s*)?(?:\((\d+)\s+punt(?:en)?\))?\s*(.*)$/us', $normalizedBlock, $matches);
         $body = trim($matches[2] ?? '');
 
+        $images = self::IMAGE_URLS[$number] ?? null;
+
         $question = [
             'id' => sprintf('kvb1-%02d', $number),
             'nummer' => $number,
             'punten' => $answer['points'],
             'uitleg' => $answer['explanation'] !== '' ? $answer['explanation'] : null,
-            'afbeelding' => isset(self::IMAGE_PAGES[$number])
-                ? sprintf('/images/kvb1/page-%02d.png', self::IMAGE_PAGES[$number])
-                : null,
+            'afbeelding' => is_string($images) ? $images : null,
+            'afbeeldingen' => is_array($images) ? $images : [],
         ];
 
         if ($number === 11) {
@@ -358,17 +355,5 @@ class ImportKvb1Exam extends Command
         }
 
         return implode("\n", $normalized);
-    }
-
-    private function publishPageImages(string $renderDirectory, string $outputDirectory): void
-    {
-        foreach (array_values(array_unique(self::IMAGE_PAGES)) as $page) {
-            $source = sprintf('%s/page-%02d.png', $renderDirectory, $page);
-            $target = sprintf('%s/page-%02d.png', $outputDirectory, $page);
-
-            if (! copy($source, $target)) {
-                throw new RuntimeException("PDF-pagina {$page} kon niet worden gepubliceerd.");
-            }
-        }
     }
 }

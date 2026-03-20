@@ -27,6 +27,7 @@
         punten: number;
         uitleg: string | null;
         afbeelding: string | null;
+        afbeeldingen?: string[];
         opties?: Option[];
         stellingen?: Statement[];
         items?: string[];
@@ -86,6 +87,16 @@
     );
     const currentResult = $derived(
         currentQuestion ? results[currentQuestion.id] : null,
+    );
+    const currentImages = $derived(
+        currentQuestion
+            ? currentQuestion.afbeeldingen &&
+                currentQuestion.afbeeldingen.length > 0
+                ? currentQuestion.afbeeldingen
+                : currentQuestion.afbeelding
+                  ? [currentQuestion.afbeelding]
+                  : []
+            : [],
     );
     const isLastQuestion = $derived(currentIndex === questions.length - 1);
     const isFirstQuestion = $derived(currentIndex === 0);
@@ -366,15 +377,17 @@
                     </div>
                 </div>
 
-                {#if currentQuestion.afbeelding}
+                {#if currentImages.length > 0}
                     <div
-                        class="mb-5 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-950"
+                        class="mb-5 grid gap-3 rounded-2xl border border-slate-200 bg-slate-50 p-3 dark:border-slate-700 dark:bg-slate-950"
                     >
-                        <img
-                            src={currentQuestion.afbeelding}
-                            alt={`Afbeelding bij vraag ${currentQuestion.nummer}`}
-                            class="w-full object-contain"
-                        />
+                        {#each currentImages as image, imageIndex (image)}
+                            <img
+                                src={image}
+                                alt={`Afbeelding ${imageIndex + 1} bij vraag ${currentQuestion.nummer}`}
+                                class="w-full rounded-xl bg-white object-contain"
+                            />
+                        {/each}
                     </div>
                 {/if}
 
