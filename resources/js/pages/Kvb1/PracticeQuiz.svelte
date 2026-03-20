@@ -39,6 +39,12 @@
         score: number;
         punten: number;
         uitleg: string | null;
+        study_reference?: {
+            topic: string;
+            chapter: string;
+            section: string;
+            title: string;
+        } | null;
         correct_option?: string;
         correct_option_text?: string | null;
         selected_option?: string | null;
@@ -56,6 +62,17 @@
             selected_position: number | null;
             score: number;
         }[];
+    };
+
+    type StudyAdvice = {
+        topic: string;
+        chapter: string;
+        section: string;
+        title: string;
+        wrong_count: number;
+        missed_points: number;
+        questions: number[];
+        advice: string;
     };
 
     let {
@@ -81,6 +98,7 @@
         passing_score: number;
         passed: boolean;
     } | null>(null);
+    let studyAdvice = $state<StudyAdvice[]>([]);
 
     const currentQuestion = $derived(
         questions.length > 0 ? questions[currentIndex] : null,
@@ -124,6 +142,7 @@
             answers = {};
             results = {};
             summary = null;
+            studyAdvice = [];
             currentIndex = 0;
         } finally {
             loading = false;
@@ -152,6 +171,7 @@
                 passing_score: payload.passing_score,
                 passed: payload.passed,
             };
+            studyAdvice = payload.study_advice;
 
             results = Object.fromEntries(
                 payload.results.map((result: Result) => [result.id, result]),
@@ -329,6 +349,72 @@
                     </div>
                 </div>
             </section>
+
+            {#if studyAdvice.length > 0}
+                <section
+                    class="rounded-3xl border border-amber-200 bg-amber-50 p-6 shadow-sm dark:border-amber-900 dark:bg-amber-950/30"
+                >
+                    <div class="mb-4 space-y-1">
+                        <p
+                            class="text-xs font-semibold uppercase tracking-[0.24em] text-amber-700 dark:text-amber-300"
+                        >
+                            Leeradvies
+                        </p>
+                        <h2 class="text-2xl font-semibold text-slate-900 dark:text-white">
+                            Dit kun je nu het beste herhalen
+                        </h2>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">
+                            Gebaseerd op je fout beantwoorde vragen, gekoppeld aan
+                            hoofdstuk 1 t/m 4 van het VBO Cursusboek recreatievaart
+                            Klein Vaarbewijs 1 &amp; 2.
+                        </p>
+                    </div>
+
+                    <div class="grid gap-4">
+                        {#each studyAdvice as item (`${item.section}-${item.topic}`)}
+                            <article
+                                class="rounded-2xl border border-amber-200 bg-white p-4 dark:border-amber-900/60 dark:bg-slate-900"
+                            >
+                                <div
+                                    class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between"
+                                >
+                                    <div class="space-y-1">
+                                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">
+                                            {item.topic}
+                                        </h3>
+                                        <p
+                                            class="text-sm text-slate-600 dark:text-slate-300"
+                                        >
+                                            {item.chapter} · {item.section} ·
+                                            {item.title}
+                                        </p>
+                                    </div>
+
+                                    <div
+                                        class="rounded-xl bg-amber-100 px-3 py-2 text-sm text-amber-950 dark:bg-amber-900/40 dark:text-amber-100"
+                                    >
+                                        {item.missed_points} gemiste punten ·
+                                        {item.wrong_count} vraag{item.wrong_count ===
+                                        1
+                                            ? ''
+                                            : 'en'}
+                                    </div>
+                                </div>
+
+                                <p class="mt-3 text-sm text-slate-700 dark:text-slate-200">
+                                    {item.advice}
+                                </p>
+
+                                <p class="mt-2 text-xs text-slate-500 dark:text-slate-400">
+                                    Betreft vraag
+                                    {item.questions.length === 1 ? '' : 'en'}:
+                                    {item.questions.join(', ')}
+                                </p>
+                            </article>
+                        {/each}
+                    </div>
+                </section>
+            {/if}
         {/if}
 
         {#if questions.length === 0}
