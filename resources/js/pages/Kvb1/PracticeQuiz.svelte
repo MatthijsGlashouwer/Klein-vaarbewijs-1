@@ -363,7 +363,7 @@
                         <img
                             src={question.afbeelding}
                             alt={`Afbeelding bij vraag ${question.nummer}`}
-                            class="max-h-[26rem] w-full object-contain"
+                            class="w-full object-contain"
                         />
                     </div>
                 {/if}

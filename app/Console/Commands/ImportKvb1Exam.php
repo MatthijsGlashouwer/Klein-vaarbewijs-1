@@ -14,25 +14,25 @@ use Throwable;
 class ImportKvb1Exam extends Command
 {
     /**
-     * @var array<int, array{page: int, height: int, width: int, y: int, x: int}>
+     * @var array<int, int>
      */
-    private const IMAGE_CROPS = [
-        2 => ['page' => 2, 'height' => 330, 'width' => 480, 'y' => 230, 'x' => 650],
-        5 => ['page' => 3, 'height' => 260, 'width' => 480, 'y' => 70, 'x' => 650],
-        7 => ['page' => 3, 'height' => 250, 'width' => 470, 'y' => 500, 'x' => 650],
-        9 => ['page' => 3, 'height' => 270, 'width' => 480, 'y' => 1120, 'x' => 650],
-        10 => ['page' => 4, 'height' => 280, 'width' => 460, 'y' => 70, 'x' => 730],
-        11 => ['page' => 4, 'height' => 480, 'width' => 620, 'y' => 430, 'x' => 0],
-        17 => ['page' => 5, 'height' => 260, 'width' => 480, 'y' => 760, 'x' => 650],
-        24 => ['page' => 7, 'height' => 360, 'width' => 450, 'y' => 100, 'x' => 0],
-        26 => ['page' => 7, 'height' => 400, 'width' => 350, 'y' => 560, 'x' => 780],
-        27 => ['page' => 7, 'height' => 470, 'width' => 360, 'y' => 960, 'x' => 780],
-        31 => ['page' => 8, 'height' => 220, 'width' => 360, 'y' => 940, 'x' => 780],
-        32 => ['page' => 8, 'height' => 300, 'width' => 400, 'y' => 1100, 'x' => 760],
-        35 => ['page' => 9, 'height' => 340, 'width' => 560, 'y' => 590, 'x' => 660],
-        38 => ['page' => 10, 'height' => 320, 'width' => 420, 'y' => 100, 'x' => 760],
-        39 => ['page' => 10, 'height' => 300, 'width' => 520, 'y' => 620, 'x' => 700],
-        40 => ['page' => 10, 'height' => 360, 'width' => 520, 'y' => 900, 'x' => 700],
+    private const IMAGE_PAGES = [
+        2 => 2,
+        5 => 3,
+        7 => 3,
+        9 => 3,
+        10 => 4,
+        11 => 4,
+        17 => 5,
+        24 => 7,
+        26 => 7,
+        27 => 7,
+        31 => 8,
+        32 => 8,
+        35 => 9,
+        38 => 10,
+        39 => 10,
+        40 => 10,
     ];
 
     public function handle(): int
@@ -72,7 +72,7 @@ class ImportKvb1Exam extends Command
                 json_encode($questions, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR),
             );
 
-            $this->cropQuestionImages($renderDirectory, $outputDirectory);
+            $this->publishPageImages($renderDirectory, $outputDirectory);
         } catch (Throwable $exception) {
             $this->error($exception->getMessage());
 
@@ -257,8 +257,8 @@ class ImportKvb1Exam extends Command
             'nummer' => $number,
             'punten' => $answer['points'],
             'uitleg' => $answer['explanation'] !== '' ? $answer['explanation'] : null,
-            'afbeelding' => isset(self::IMAGE_CROPS[$number])
-                ? sprintf('/images/kvb1/question-%02d.png', $number)
+            'afbeelding' => isset(self::IMAGE_PAGES[$number])
+                ? sprintf('/images/kvb1/page-%02d.png', self::IMAGE_PAGES[$number])
                 : null,
         ];
 
@@ -360,27 +360,14 @@ class ImportKvb1Exam extends Command
         return implode("\n", $normalized);
     }
 
-    private function cropQuestionImages(string $renderDirectory, string $outputDirectory): void
+    private function publishPageImages(string $renderDirectory, string $outputDirectory): void
     {
-        foreach (self::IMAGE_CROPS as $number => $crop) {
-            $source = sprintf('%s/page-%02d.png', $renderDirectory, $crop['page']);
-            $target = sprintf('%s/question-%02d.png', $outputDirectory, $number);
+        foreach (array_values(array_unique(self::IMAGE_PAGES)) as $page) {
+            $source = sprintf('%s/page-%02d.png', $renderDirectory, $page);
+            $target = sprintf('%s/page-%02d.png', $outputDirectory, $page);
 
-            $result = Process::path(base_path())->run([
-                'sips',
-                '-c',
-                (string) $crop['height'],
-                (string) $crop['width'],
-                '--cropOffset',
-                (string) $crop['y'],
-                (string) $crop['x'],
-                $source,
-                '--out',
-                $target,
-            ]);
-
-            if ($result->failed()) {
-                throw new RuntimeException("Afbeelding voor vraag {$number} kon niet worden uitgesneden.");
+            if (! copy($source, $target)) {
+                throw new RuntimeException("PDF-pagina {$page} kon niet worden gepubliceerd.");
             }
         }
     }
