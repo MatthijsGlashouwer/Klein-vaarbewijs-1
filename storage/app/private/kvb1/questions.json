@@ -1,0 +1,1008 @@
+[
+    {
+        "id": "kvb1-01",
+        "nummer": 1,
+        "punten": 1,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Volgens de Scheepvaartverkeerswet is het verboden te varen als men teveel alcohol heeft gedronken. Voor wie geldt dit verbod?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "ALLEEN voor de schipper."
+            },
+            {
+                "id": "b",
+                "tekst": "Voor de schipper EN voor degene die het schip stuurt."
+            },
+            {
+                "id": "c",
+                "tekst": "ALLEEN voor degene die het schip stuurt."
+            }
+        ],
+        "juiste_antwoord": "b"
+    },
+    {
+        "id": "kvb1-02",
+        "nummer": 2,
+        "punten": 1,
+        "uitleg": "In het ‘Vaststellingsbesluit BPR’ staat waar het reglement geldt. Er staat ook waar het niet geldt omdat daar een ander reglement van kracht is. Zie ook de ’Afbakening’.",
+        "afbeelding": "/images/kvb1/question-02.png",
+        "type": "mcq",
+        "vraag": "U vaart van Lith aan de Maas naar het Kanaal van St. Andries. U schut via de sluis (van St. Andries) naar de Waal. U vaart de Waal af en volgt aansluitend de Boven Merwede. Bij Gorinchem passeert u een sluis en vaart naar de Linge. Zie het plaatje. Met welk scheepvaartreglement of met welke scheepvaart-reglementen heeft u onderweg te maken?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Eerst met het Binnenvaartpolitiereglement (BPR), daarna met het Rijnvaartpolitiereglement (RPR) en dan weer het Binnenvaartpolitiereglement (BPR)."
+            },
+            {
+                "id": "b",
+                "tekst": "Eerst met het Rijnvaartpolitiereglement (RPR), daarna met het Binnenvaartpolitiereglement (BPR) en dan weer het Rijnvaartpolitiereglement (RPR)."
+            },
+            {
+                "id": "c",
+                "tekst": "Alleen met het Binnenvaartpolitiereglement (BPR)."
+            },
+            {
+                "id": "d",
+                "tekst": "Alleen met het Rijnvaartpolitiereglement (RPR)."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-03",
+        "nummer": 3,
+        "punten": 1,
+        "uitleg": "Artikel 1.10 lid 5 BPR (nieuw na wijziging in Stb.2015, 395) en art.1.11.",
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "U vaart met een klein motorschip met kajuit. Er is een marifoon aan boord. Volgens het Binnenvaartpolitiereglement (BPR) moeten bepaalde documenten aan boord zijn. In sommige gevallen is voldoende om op de laptop een digitale versie (voor onmiddellijk gebruik) aanwezig te hebben. Voor welke documenten geldt dat?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Voor de tekst van het Binnenvaartpolitiereglement én voor het Handboek voor de Marifonie."
+            },
+            {
+                "id": "b",
+                "tekst": "Alleen maar voor de tekst van het Binnenvaartpolitiereglement."
+            },
+            {
+                "id": "c",
+                "tekst": "Alleen maar voor de tekst van het Handboek voor de Marifonie."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-04",
+        "nummer": 4,
+        "punten": 2,
+        "uitleg": "Artikel 1.01 A15° en artikel 3.13 lid 1 BPR.",
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Een klein schip met een lengte van 8 meter vaart onder zeil en op de motor. Welke navigatielichten moet het volgens het Binnenvaartpolitiereglement (BPR) 's nachts voeren?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Boordlichten en een heklicht verenigd in één lantaarn (driekleurenlicht) in de top van de mast èn onder dit licht een toplicht."
+            },
+            {
+                "id": "b",
+                "tekst": "Toplicht, boordlichten en een heklicht."
+            },
+            {
+                "id": "c",
+                "tekst": "Boordlichten en heklicht verenigd in één lantaarn (driekleurenlicht) of boordlichten (in één lantaarn voor op de boeg) en een heklicht."
+            }
+        ],
+        "juiste_antwoord": "b"
+    },
+    {
+        "id": "kvb1-05",
+        "nummer": 5,
+        "punten": 2,
+        "uitleg": "Artikel 3.25 lid 1a en 1b.",
+        "afbeelding": "/images/kvb1/question-05.png",
+        "type": "mcq",
+        "vraag": "Een baggerwerktuig voert aan één kant een rode bol en aan de andere kant twee groene ruiten. Zie het plaatje. Wat betekent dit volgens het Binnenvaartpolitiereglement (BPR)?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Dat ter plaatse de vaarregels voor een engte gelden."
+            },
+            {
+                "id": "b",
+                "tekst": "Dat voorbijvaren niet is toegestaan."
+            },
+            {
+                "id": "c",
+                "tekst": "Dat tijdens het voorbijvaren geen hinderlijke waterbeweging mag worden veroorzaakt."
+            },
+            {
+                "id": "d",
+                "tekst": "Dat een voorbijvarend schip aan de zijde van de groene ruiten moet passeren."
+            }
+        ],
+        "juiste_antwoord": "d"
+    },
+    {
+        "id": "kvb1-06",
+        "nummer": 6,
+        "punten": 1,
+        "uitleg": "Artikel 4.02 lid 2 en Bijlage 6 onderdeel A.",
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Een verzoek tot het bedienen van een beweegbare brug kan worden kenbaar gemaakt door een geluidssein. Welk sein is dit volgens het Binnenvaartpolitiereglement (BPR)?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Eén lange stoot: ____"
+            },
+            {
+                "id": "b",
+                "tekst": "Drie lange stoten: ____ ____ ____"
+            },
+            {
+                "id": "c",
+                "tekst": "Eén lange, één korte en één lange stoot: ____ __ ____"
+            }
+        ],
+        "juiste_antwoord": "c"
+    },
+    {
+        "id": "kvb1-07",
+        "nummer": 7,
+        "punten": 2,
+        "uitleg": "Artikel 4.06 lid 2 BPR. De marifoon is al verplicht wanneer het kleine schip is uitgerust met radar. Dus zeker ook bij het varen op radar.",
+        "afbeelding": "/images/kvb1/question-07.png",
+        "type": "mcq",
+        "vraag": "Wat bepaalt het Binnenvaartpolitiereglement (BPR) ten aanzien van de marifoon?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Voor een KLEIN schip is de marifoon NOOIT VERPLICHT."
+            },
+            {
+                "id": "b",
+                "tekst": "Een KLEIN schip dat bij slecht zicht op radar vaart MOET een marifoon hebben."
+            },
+            {
+                "id": "c",
+                "tekst": "Een KLEIN schip dat voorbij verkeersteken B.11 (zie het plaatje) vaart MOET een marifoon hebben."
+            }
+        ],
+        "juiste_antwoord": "b"
+    },
+    {
+        "id": "kvb1-08",
+        "nummer": 8,
+        "punten": 3,
+        "uitleg": "Artikel 6.02 BPR. ‘Andere schepen’ betekent ‘alle niet snelle schepen’ dus ook kleine schepen.",
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Volgens het Binnenvaartpolitiereglement (BPR) moet een snel schip voorrang verlenen aan een ander schip. Moet dit onder alle omstandigheden?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Neen, niet wanneer het langzaam vaart."
+            },
+            {
+                "id": "b",
+                "tekst": "Neen, niet wanneer het snelle schip de stuurboordzijde van het vaarwater volgt."
+            },
+            {
+                "id": "c",
+                "tekst": "Ja, er zijn geen uitzonderingen op deze regel."
+            }
+        ],
+        "juiste_antwoord": "c"
+    },
+    {
+        "id": "kvb1-09",
+        "nummer": 9,
+        "punten": 3,
+        "uitleg": "Artikel 6.07 lid 5 BPR.",
+        "afbeelding": "/images/kvb1/question-09.png",
+        "type": "mcq",
+        "vraag": "Twee kleine schepen naderen elkaar bij een engte. Klein motorschip Fin vaart voor stroom. Klein zeilschip Lot zeilt over bakboordboeg. Gelijktijdige doorvaart is niet mogelijk. Zie het plaatje. Regelt het Binnenvaartpolitiereglement (BPR) dit? Zo ja, hoe?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Dit is niet geregeld; goed zeemanschap toepassen."
+            },
+            {
+                "id": "b",
+                "tekst": "Ja, schip Fin moet voorrang verlenen."
+            },
+            {
+                "id": "c",
+                "tekst": "Ja, schip Lot moet voorrang verlenen."
+            }
+        ],
+        "juiste_antwoord": "c"
+    },
+    {
+        "id": "kvb1-10",
+        "nummer": 10,
+        "punten": 3,
+        "uitleg": "Bij de vaarregels kan er sprake zijn van ‘voorrang’ moeten verlenen en ‘medewerking’ moeten verlenen. Het gedrag op samenkomsten van een hoofdvaarwater met een nevenvaarwater of haven wordt geregeld in artikel 6.16 BPR. Het voorbeeld van vraag 10 wordt geregeld in artikel 6.16 lid 2 BPR. Daar staat dat het grote schip (Wil) (het BPR maakt hier geen onderscheid tussen motorschip of zeilschip) bij het uitvaren van het nevenvaarwater medewerking mag verlangen van een schip (Ger) op het hoofdvaarwater. Het maakt volgens het BPR in dit geval niet uit of het schip (Ger) op het hoofdvaarwater groot of klein is. Volgens artikel 6.03 lid 6 BPR moet het ‘uitvarende’ schip ervoor zorgen dat het schip op het hoofdvaarwater niet ‘plotseling en in sterke mate koers of snelheid moet wijzigen’. Hinderen mag dus, zolang dit ‘verantwoord’ gebeurt. De sleutelwoorden zijn ‘plotseling en in sterke mate’. Het schip op het hoofdvaarwater moet meewerken; dat staat in artikel 6.03 lid 7 BPR. De ‘medewerkingsregel’ staat naast de ‘voorrangsregel’. In de examenvragen wordt dat onderscheid strikt gevolgd. Daarom zijn de antwoorden -b-/-c-/-d- stuk voor stuk fout. Het gestelde in antwoord -b- komt in heel artikel 6.16 BPR niet voor. Het gestelde in antwoord -d- geldt alleen wanneer verkeersteken B.9 is geplaatst. Zie daarvoor artikel 6.16 lid 8 BPR. De ‘medewerkingsregel’ komt ook voor in artikel 6.13, 6.14 en 6.23 BPR.",
+        "afbeelding": "/images/kvb1/question-10.png",
+        "type": "mcq",
+        "vraag": "Klein motorschip Ger vaart op een hoofdvaarwater en wil rechtdoor. Groot zeilschip Wil verlaat de haven en gaat daarna naar bakboord. Zie het plaatje. Wat bepaalt het Binnenvaartpolitiereglement (BPR)?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Schip Wil mag bij het uitvaren ‘medewerking verlangen’ van schip Ger. Schip Ger moet meewerken."
+            },
+            {
+                "id": "b",
+                "tekst": "Schip Ger moet voorrang verlenen aan schip Wil omdat Wil voor hem van stuurboord nadert."
+            },
+            {
+                "id": "c",
+                "tekst": "Schip Ger moet voorrang verlenen aan schip Wil omdat Ger klein is en Wil groot."
+            },
+            {
+                "id": "d",
+                "tekst": "Schip Wil moet voorrang verlenen aan schip Ger omdat Ger op het hoofdvaarwater vaart."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-11",
+        "nummer": 11,
+        "punten": 3,
+        "uitleg": "Sleep de cijfers naar de juiste schepen. 1: Nel 2: Kim 3: Han",
+        "afbeelding": "/images/kvb1/question-11.png",
+        "type": "ordering",
+        "vraag": "Klein zeilschip Nel zeilt over stuurboordboeg langs stuurboordwal. Klein zeilschip Kim nadert met het zeil over bakboord voor Nel op tegengestelde koers. Klein motorschip Han nadert voor Nel over bakboord en voor Kim over stuurboord. Er bestaat gevaar voor aanvaring. Hoe is de volgorde van voorrang volgens het Binnenvaartpolitiereglement (BPR)?",
+        "items": [
+            "Nel",
+            "Kim",
+            "Han"
+        ],
+        "antwoord": [
+            "Nel",
+            "Kim",
+            "Han"
+        ]
+    },
+    {
+        "id": "kvb1-12",
+        "nummer": 12,
+        "punten": 2,
+        "uitleg": "Artikel 6.28 lid 9 -e- BPR.",
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "U ligt met uw schip gemeerd in een sluis. Mag u volgens het Binnenvaartpolitiereglement (BPR) uw schroef in werking hebben?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Ja, het is toegestaan de schroef in werking te hebben."
+            },
+            {
+                "id": "b",
+                "tekst": "Ja, het is zelfs aanbevolen de schroef in werking te hebben."
+            },
+            {
+                "id": "c",
+                "tekst": "Nee, het is verboden de schroef in werking te hebben."
+            }
+        ],
+        "juiste_antwoord": "c"
+    },
+    {
+        "id": "kvb1-13",
+        "nummer": 13,
+        "punten": 2,
+        "uitleg": "Artikel 6.29 lid 3 BPR. Antwoord I: Nee. Artikel 4.06 lid 2 BPR. Antwoord II: Ja.",
+        "afbeelding": null,
+        "type": "boolean",
+        "vraag": "Hier volgen twee vragen over het varen bij slecht zicht op een vaarweg waar het Binnenvaartpolitiereglement (BPR) geldt.",
+        "stellingen": [
+            {
+                "id": "i",
+                "tekst": "Mag een klein schip bij slecht zicht op ALLE BPR-vaarwegen zonder radar varen?",
+                "antwoord": "nee",
+                "punten": 1
+            },
+            {
+                "id": "ii",
+                "tekst": "Moet een klein schip, dat op radar vaart, volgens het BPR zijn uitgerust met een marifoon?",
+                "antwoord": "ja",
+                "punten": 1
+            }
+        ]
+    },
+    {
+        "id": "kvb1-14",
+        "nummer": 14,
+        "punten": 2,
+        "uitleg": "* Artikel 1.01 onder D 3° en 4° BPR.",
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Hoofdstuk 7 Binnenvaartpolitiereglement (BPR) geeft voorschriften voor het stilliggen. Schip Anne is vastgevaren (zit aan de grond). Schip Bart drijft met motorpech zonder dat het ergens door wordt voortbewogen. Welk schip ligt stil of welke schepen liggen stil volgens het BPR?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Schip Anne wel en schip Bart niet."
+            },
+            {
+                "id": "b",
+                "tekst": "Geen van de schepen."
+            },
+            {
+                "id": "c",
+                "tekst": "Schip Bart wel en schip Anne niet."
+            },
+            {
+                "id": "d",
+                "tekst": "Beide schepen."
+            }
+        ],
+        "juiste_antwoord": "b"
+    },
+    {
+        "id": "kvb1-15",
+        "nummer": 15,
+        "punten": 2,
+        "uitleg": "Artikel 8.06 lid 3 BPR.",
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "De bestuurder van een snelle motorboot trekt daarmee een waterskiër. Wat bepaalt het Binnenvaartpolitiereglement (BPR)?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "De bestuurder moet een mede-opvarende van tenminste 15 jaar oud als uitkijk aanstellen."
+            },
+            {
+                "id": "b",
+                "tekst": "De bestuurder moet ervoor zorgen dat de skiër tenminste 15 jaar oud is."
+            },
+            {
+                "id": "c",
+                "tekst": "De bestuurder moet een reddingsvest dragen."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-16",
+        "nummer": 16,
+        "punten": 1,
+        "uitleg": "Artikel 9.04 BPR, van kracht op RPR-gebied via artikel 2 lid 3 van het Vaststellingsbesluit BPR. In de Bijlage 15a BPR wordt de Lek niet genoemd. NB: Bij de laatste wijziging van het BPR (Stb.2015, 395) is de stuurboordwalplicht op de Waal en op de Boven-Rijn afgeschaft.",
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "U vaart op de rivier de Lek. Is er op die rivier een plaats in het vaarwater voorgeschreven?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "U bent op de rivier de Lek verplicht zoveel mogelijk de stuurboordzijde van het vaarwater aan te houden."
+            },
+            {
+                "id": "b",
+                "tekst": "U moet op de rivier de Lek het midden aanhouden in verband met grote schepen die dan kunnen kiezen aan welke kant ze u kunnen passeren."
+            },
+            {
+                "id": "c",
+                "tekst": "U bent op de Lek niet verplicht een bepaalde zijde van het vaarwater aan te houden."
+            }
+        ],
+        "juiste_antwoord": "c"
+    },
+    {
+        "id": "kvb1-17",
+        "nummer": 17,
+        "punten": 1,
+        "uitleg": "Artikel 3.13 lid 4 RPR. Let op: volgens artikel 3.13 lid 5 BPR is deze verlichting in BPR-gebied slechts toegestaan voor een klein zeilschip korter dan 7 meter.",
+        "afbeelding": "/images/kvb1/question-17.png",
+        "type": "mcq",
+        "vraag": "U zeilt met een klein schip op een vaarwater waarop het Rijnvaartpolitiereglement (RPR) van kracht is. U vaart met een open zeilboot van 8 meter lang. Het is nacht en u voert een rondomschijnend wit licht in de top van de mast (zie plaatje). Verder heeft u een wit licht klaar liggen om de aandacht te trekken van naderende andere schepen. Wat is volgens het RPR juist?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Deze verlichting is niet voldoende voor een klein zeilschip."
+            },
+            {
+                "id": "b",
+                "tekst": "Deze verlichting is voor elk klein zeilschip voldoende."
+            },
+            {
+                "id": "c",
+                "tekst": "Deze verlichting is voldoende alleen maar voor een klein zeilschip korter dan 7 meter."
+            }
+        ],
+        "juiste_antwoord": "b"
+    },
+    {
+        "id": "kvb1-18",
+        "nummer": 18,
+        "punten": 3,
+        "uitleg": "Uit artikel 6.02 lid 2 RPR blijkt dat kleine schepen onderling artikel 6.04 RPR (= gebruik blauw bord en wit flikkerlicht) niet mogen toepassen, dus antwoord a is fout. Uit lid 2 blijkt ook dat de regel van artikel 6.04 RPR niet geldt tussen groot en klein, dus antwoord b is fout.",
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Wat bepaalt het Rijnvaartpolitiereglement (RPR) over het gebruik van blauw bord met wit flikkerlicht?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Een klein motorschip mag met een blauw bord en wit flikkerlicht aan een ander KLEIN motorschip aangeven dat het ‘stuurboord op stuurboord’ wil ontmoeten."
+            },
+            {
+                "id": "b",
+                "tekst": "Als een GROOT motorschip een blauw bord met wit flikkerlicht toont mag een klein motorschip met een blauw bord en wit flikkerlicht antwoorden dat het ‘stuurboord op stuurboord’ zal ontmoeten."
+            },
+            {
+                "id": "c",
+                "tekst": "Een klein motorschip mag NOOIT een blauw bord met wit flikkerlicht tonen."
+            }
+        ],
+        "juiste_antwoord": "c"
+    },
+    {
+        "id": "kvb1-19",
+        "nummer": 19,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Waarom moet een wierfilter worden geïnstalleerd?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Om het water in een 'gesloten' koelsysteem te filteren."
+            },
+            {
+                "id": "b",
+                "tekst": "Om het vuil uit de smeerolie te filteren."
+            },
+            {
+                "id": "c",
+                "tekst": "Om het condenswater uit de dieselolie te filteren."
+            },
+            {
+                "id": "d",
+                "tekst": "Om te voorkomen dat er vuil in het koelsysteem komt"
+            }
+        ],
+        "juiste_antwoord": "d"
+    },
+    {
+        "id": "kvb1-20",
+        "nummer": 20,
+        "punten": 3,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Hoe kan men bij het starten van een binnenboord-benzinemotor het brand- en explosiegevaar zoveel mogelijk voorkomen?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Door de motorluiken open te zetten."
+            },
+            {
+                "id": "b",
+                "tekst": "Door een gasdetector onder de motor aan te brengen."
+            },
+            {
+                "id": "c",
+                "tekst": "Door een vonkvrije ventilator de dampen onder de motor te laten afzuigen."
+            }
+        ],
+        "juiste_antwoord": "c"
+    },
+    {
+        "id": "kvb1-21",
+        "nummer": 21,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Varen zonder reddingsvesten aan boord is erg onverantwoord. Wat is het advies over het minimale aantal reddingsvesten dat aan boord moet zijn van een klein schip?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Eén voor iedere opvarende."
+            },
+            {
+                "id": "b",
+                "tekst": "Eén voor iedere opvarende plus een reserve."
+            },
+            {
+                "id": "c",
+                "tekst": "Eén voor de stuurman en één voor degenen die aan dek werken."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-22",
+        "nummer": 22,
+        "punten": 3,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Een gasdetector is uitgerust met één of meer sensoren. Waar moeten deze sensoren worden geplaatst?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Zo dicht mogelijk bij de plaats waar wordt gestuurd, als dat binnen is."
+            },
+            {
+                "id": "b",
+                "tekst": "Zo dicht mogelijk boven een kooktoestel."
+            },
+            {
+                "id": "c",
+                "tekst": "In het laagst gelegen gedeelte van de ruimte waarin een gastoestel is geplaatst."
+            }
+        ],
+        "juiste_antwoord": "c"
+    },
+    {
+        "id": "kvb1-23",
+        "nummer": 23,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "U wilt voorkomen dat de opvarenden overboord kunnen vallen. Welke maatregel geeft daarvoor de beste bescherming?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "‘Scepters’ aan de buitenkant van het dek aanbrengen met daar doorheen twee relingdraden op verschillende hoogte."
+            },
+            {
+                "id": "b",
+                "tekst": "Een zogenaamde ‘voetlijst’ (rechtop staande strip) aan de buitenkant van het dek aanbrengen."
+            },
+            {
+                "id": "c",
+                "tekst": "Een reddingsvest dragen. Bij voorkeur een van het type dat zich automatisch opblaast wanneer de persoon die het draagt overboord valt."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-24",
+        "nummer": 24,
+        "punten": 2,
+        "uitleg": "Het juiste antwoord is de ton rechtsonder.",
+        "afbeelding": "/images/kvb1/question-24.png",
+        "type": "mcq",
+        "vraag": "Varend in het SIGNI-betonningssysteem nadert u een scheidingston aangevende: Vaarwateren van gelijk belang. Hoe ziet die ton eruit?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Linksboven"
+            },
+            {
+                "id": "b",
+                "tekst": "Rechtsboven"
+            },
+            {
+                "id": "c",
+                "tekst": "Linksonder"
+            },
+            {
+                "id": "d",
+                "tekst": "Rechtsonder"
+            }
+        ],
+        "juiste_antwoord": "d"
+    },
+    {
+        "id": "kvb1-25",
+        "nummer": 25,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Wat is het karakter van een schitterlicht (Fl)?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Het schijnsel is korter dan de verduistering."
+            },
+            {
+                "id": "b",
+                "tekst": "De verduistering is korter dan het schijnsel."
+            },
+            {
+                "id": "c",
+                "tekst": "De verduistering is even lang als het schijnsel."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-26",
+        "nummer": 26,
+        "punten": 1,
+        "uitleg": null,
+        "afbeelding": "/images/kvb1/question-26.png",
+        "type": "mcq",
+        "vraag": "U ziet bij een brug een zogenaamde hoogteschaal. Zie het plaatje. Hoeveel onderdoorvaarthoogte wordt er aangegeven?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "6.70 meter"
+            },
+            {
+                "id": "b",
+                "tekst": "7.30 meter"
+            },
+            {
+                "id": "c",
+                "tekst": "7.70 meter"
+            },
+            {
+                "id": "d",
+                "tekst": "8.30 meter"
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-27",
+        "nummer": 27,
+        "punten": 1,
+        "uitleg": null,
+        "afbeelding": "/images/kvb1/question-27.png",
+        "type": "mcq",
+        "vraag": "U ziet in de vaarweg een NAP-peilschaal. Zie het plaatje. Hoe hoog staat het water?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "12.25 meter boven NAP"
+            },
+            {
+                "id": "b",
+                "tekst": "12.35 meter boven NAP"
+            },
+            {
+                "id": "c",
+                "tekst": "11.35 meter boven NAP"
+            },
+            {
+                "id": "d",
+                "tekst": "11.25 meter boven NAP"
+            }
+        ],
+        "juiste_antwoord": "d"
+    },
+    {
+        "id": "kvb1-28",
+        "nummer": 28,
+        "punten": 3,
+        "uitleg": "Bij het oplossen van deze berekening kunt u het beste een schetsje op het kladpapier maken en daarin de afstanden vermelden. Stap 1. Trek eerst een lijn die de onderkant van de brug voorstelt . Stap 2. Trek dan een lijn die kanaalpeil (KP) voorstelt. Stap 3. Geef de verticale afstand tussen lijn 1 en 2 aan en noteer ‘12 dm’. Stap 4. Trek dan een lijn die NAP voorstelt: 2 dm boven het KP. Stap 5. Trek een lijn die de waterstand voorstel: 2 dm boven NAP. Stap 6. U kunt nu zien dat de afstand tussen de onderkant brug en het water 8 dm is. 1e onderkant brug: --------------------------------------------------------------- 3e 12 dm 6e 8 dm 5e water 4e NAP 2 dm 2 dm 2e kanaalpeil: ----------------------------------------------------------",
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "U vaart op een kanaal en nadert een brug. In de waterkaart staat: brug H 12. De doorvaarthoogte is gegeven in decimeters ten opzichte van het kanaalpeil (KP). KP = NAP - 2 dm. Op de peilschaal bij de brug ziet u dat de waterstand NAP + 2 dm is. Wat is nu de doorvaarthoogte?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "8 dm."
+            },
+            {
+                "id": "b",
+                "tekst": "12 dm."
+            },
+            {
+                "id": "c",
+                "tekst": "14 dm."
+            },
+            {
+                "id": "d",
+                "tekst": "10 dm."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-29",
+        "nummer": 29,
+        "punten": 1,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Met welke term wordt windkracht 5 volgens Beaufort aangeduid?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Vrij krachtige wind."
+            },
+            {
+                "id": "b",
+                "tekst": "Matige wind."
+            },
+            {
+                "id": "c",
+                "tekst": "Harde wind."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-30",
+        "nummer": 30,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Op de weerkaart ziet u de isobaren in een bepaald gebied ver van elkaar liggen. Wat kunt u in dit gebied verwachten?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Harde wind."
+            },
+            {
+                "id": "b",
+                "tekst": "Zwakke wind."
+            },
+            {
+                "id": "c",
+                "tekst": "Windvlagen."
+            }
+        ],
+        "juiste_antwoord": "b"
+    },
+    {
+        "id": "kvb1-31",
+        "nummer": 31,
+        "punten": 2,
+        "uitleg": "BPR Bijlage 7, verkeerstekens A.15 en A.17.Volgens art.1.01 A.16 BPR is een zeilplank een ‘klein zeilschip voorzien van...’. Dus alles wat geldt voor een zeilschip geldt automatisch ook voor een zeilplank. Andersom niet.",
+        "afbeelding": "/images/kvb1/question-31.png",
+        "type": "mcq",
+        "vraag": "Wat is juist ten aanzien van de afgebeelde verkeerstekens?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Een groot zeilschip mag niet voorbij het linkse en niet voorbij het rechtse teken."
+            },
+            {
+                "id": "b",
+                "tekst": "Een klein zeilschip mag wel voorbij het linkse teken."
+            },
+            {
+                "id": "c",
+                "tekst": "Een zeilplank mag niet voorbij het linkse en niet voorbij het rechtse teken."
+            }
+        ],
+        "juiste_antwoord": "c"
+    },
+    {
+        "id": "kvb1-32",
+        "nummer": 32,
+        "punten": 2,
+        "uitleg": "Zie de opschriften boven artikel 7.02, 7.03 en 7.04 BPR.",
+        "afbeelding": "/images/kvb1/question-32.png",
+        "type": "mcq",
+        "vraag": "Wat is juist ten aanzien van het afgebeelde verkeersteken?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "U mag meren en ankeren."
+            },
+            {
+                "id": "b",
+                "tekst": "U mag niet meren maar wel ankeren."
+            },
+            {
+                "id": "c",
+                "tekst": "U mag wel meren maar niet ankeren."
+            },
+            {
+                "id": "d",
+                "tekst": "U mag niet meren en niet ankeren."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-33",
+        "nummer": 33,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Een schip met een linkse schroef loopt geen snelheid door het water. Het is windstil. Het roer staat midscheeps. Wat gebeurt er als de schroef op achteruit wordt gezet?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Het schip vaart in een rechte lijn achteruit."
+            },
+            {
+                "id": "b",
+                "tekst": "Het achterschip trekt naar bakboord."
+            },
+            {
+                "id": "c",
+                "tekst": "Het achterschip trekt naar stuurboord."
+            }
+        ],
+        "juiste_antwoord": "c"
+    },
+    {
+        "id": "kvb1-34",
+        "nummer": 34,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "U gaat ankeren op een meer. U besluit daar te overnachten. Het weerbericht zegt dat de wind uit dezelfde richting blijft waaien en ’s nachts in kracht zal toenemen. Wat is juist?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Als u de ankerplaats aan hogerwal heeft gekozen, ligt u rustiger dan aan lagerwal."
+            },
+            {
+                "id": "b",
+                "tekst": "Als u de ankerplaats aan lagerwal heeft gekozen, ligt u rustiger dan aan hogerwal."
+            },
+            {
+                "id": "c",
+                "tekst": "Het maakt geen verschil of u de ankerplaats aan hogerwal heeft gekozen of aan lagerwal."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-35",
+        "nummer": 35,
+        "punten": 2,
+        "uitleg": "Het waterpeil zakt aan stuurboord meer dan aan bakboord. Door de aanzuigende werking van de schroef zakt het waterpeil bij het stuurboordachterschip meer dan bij het stuurboordvoorschip. Daardoor zuigt het achterschip sterker aan dan het voorschip.",
+        "afbeelding": "/images/kvb1/question-35.png",
+        "type": "mcq",
+        "vraag": "Een schip vaart dicht langs zijn stuurboordwal. Op een gegeven moment ontstaat sterke zuiging. Als de schipper niet ingrijpt zal het schip de oever raken. Op welke manier zuigt het schip naar de oever? Zie het plaatje.",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Volgens schip 1."
+            },
+            {
+                "id": "b",
+                "tekst": "Volgens schip 2."
+            },
+            {
+                "id": "c",
+                "tekst": "Volgens schip 3."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-36",
+        "nummer": 36,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Wat is de 'dode hoek' van een schip?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Het gebied vóór de boeg van het schip dat door de schipper vanuit zijn stuurhut niet kan worden overzien."
+            },
+            {
+                "id": "b",
+                "tekst": "Het gedeelte van een nevenvaarwater dat vanuit de stuurhut van een in het hoofdvaarwater varend schip niet kan worden overzien."
+            },
+            {
+                "id": "c",
+                "tekst": "De ruimte tussen de stuurboordzijde van het schip en de wal die het nodig heeft voor het uitzwaaien van het achterschip wanneer het bakboord uit draait."
+            }
+        ],
+        "juiste_antwoord": "a"
+    },
+    {
+        "id": "kvb1-37",
+        "nummer": 37,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": null,
+        "type": "mcq",
+        "vraag": "Een motorschip waarvan de motor is uitgevallen, wordt gesleept. Doordat er geen schroefwater langs het roer stroomt, luistert het schip slecht naar het roer. Op welke manier kan er onder rustige omstandigheden het beste worden gesleept?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Met één lange tros."
+            },
+            {
+                "id": "b",
+                "tekst": "Met twee gekruiste korte trossen."
+            },
+            {
+                "id": "c",
+                "tekst": "Met één korte tros."
+            }
+        ],
+        "juiste_antwoord": "b"
+    },
+    {
+        "id": "kvb1-38",
+        "nummer": 38,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": "/images/kvb1/question-38.png",
+        "type": "mcq",
+        "vraag": "Een klein schip ligt afgemeerd op de manier zoals in het plaatje getekend. De lus van de rode lijn is belegd op een bolder stuurboordachter en de rode lijn is achterlangs een paal op de wal gelegd. De lijn is niet vastgemaakt op die paal maar loopt door naar een bolder stuurboord op het voordek. Daar is de lijn op die bolder vastgemaakt. Verder is de blauwe lijn vanaf het voorschip dwars uitgezet op een bolder aan de wal. Zie het plaatje. Wat is juist?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Het schip kan vooruit en achteruit bewegen. En het voorschip wordt niet goed tegen de wal gehouden. Het schip ligt daarom niet goed afgemeerd."
+            },
+            {
+                "id": "b",
+                "tekst": "Het schip kan vooruit en achteruit bewegen. En het achterschip wordt niet goed tegen de wal gehouden. Het schip ligt daarom niet goed afgemeerd."
+            },
+            {
+                "id": "c",
+                "tekst": "Het schip kan niet vrij vooruit en achteruit bewegen. Maar het achterschip wordt niet goed tegen de wal gehouden. Het schip ligt daarom niet goed afgemeerd."
+            },
+            {
+                "id": "d",
+                "tekst": "Het schip kan niet vrij vooruit of achteruit bewegen. Het voorschip en het achterschip wordt goed tegen de wal gehouden. Het schip ligt goed afgemeerd."
+            }
+        ],
+        "juiste_antwoord": "b"
+    },
+    {
+        "id": "kvb1-39",
+        "nummer": 39,
+        "punten": 2,
+        "uitleg": null,
+        "afbeelding": "/images/kvb1/question-39.png",
+        "type": "mcq",
+        "vraag": "U vaart met uw schip recht voor de wind. U wilt afmeren en u kunt kiezen om dat aan stuurboord of aan bakboord te doen. Zie het plaatje. Het schip heeft een rechtse schroef. Welke wal kiest u en welke tros brengt u als eerste uit?",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Aan stuurboordwal op de achtertros."
+            },
+            {
+                "id": "b",
+                "tekst": "Aan stuurboordwal op de voortros."
+            },
+            {
+                "id": "c",
+                "tekst": "Aan bakboordwal op de voortros."
+            },
+            {
+                "id": "d",
+                "tekst": "Aan bakboordwal op de achtertros."
+            }
+        ],
+        "juiste_antwoord": "d"
+    },
+    {
+        "id": "kvb1-40",
+        "nummer": 40,
+        "punten": 3,
+        "uitleg": "Bepaal eerst hoe met een rechtse schroef de kortste draaicirkel wordt bereikt. Bepaal daarna hoe de boegschroef daarbij helpen kan.",
+        "afbeelding": "/images/kvb1/question-40.png",
+        "type": "mcq",
+        "vraag": "U vaart met een motorboot die is voorzien van een rechtse schroef en een boegschroef. U moet keren, zonder achteruit te slaan, met een zo kort mogelijke draaicirkel. Zie het plaatje waarin het schroefwater van de voortstuwingsmotor en van de boegschroef is getekend. Kies de juiste mogelijkheid.",
+        "opties": [
+            {
+                "id": "a",
+                "tekst": "Mogelijkheid 1 op het plaatje."
+            },
+            {
+                "id": "b",
+                "tekst": "Mogelijkheid 4 op het plaatje."
+            },
+            {
+                "id": "c",
+                "tekst": "Mogelijkheid 3 op het plaatje."
+            },
+            {
+                "id": "d",
+                "tekst": "Mogelijkheid 2 op het plaatje."
+            }
+        ],
+        "juiste_antwoord": "c"
+    }
+]
