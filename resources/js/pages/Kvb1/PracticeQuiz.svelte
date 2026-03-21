@@ -35,6 +35,8 @@
 
     type Result = {
         id: string;
+        nummer: number;
+        vraag: string;
         type: 'mcq' | 'boolean' | 'ordering';
         score: number;
         punten: number;
@@ -116,6 +118,11 @@
                   : []
             : [],
     );
+    const wrongResults = $derived(
+        Object.values(results)
+            .filter((result) => result.score < result.punten)
+            .sort((left, right) => left.nummer - right.nummer),
+    );
     const isLastQuestion = $derived(currentIndex === questions.length - 1);
     const isFirstQuestion = $derived(currentIndex === 0);
 
@@ -190,6 +197,16 @@
     function nextQuestion(): void {
         if (currentIndex < questions.length - 1) {
             currentIndex += 1;
+        }
+    }
+
+    function goToQuestion(questionId: string): void {
+        const index = questions.findIndex(
+            (question) => question.id === questionId,
+        );
+
+        if (index >= 0) {
+            currentIndex = index;
         }
     }
 
@@ -410,6 +427,111 @@
                                     {item.questions.length === 1 ? '' : 'en'}:
                                     {item.questions.join(', ')}
                                 </p>
+                            </article>
+                        {/each}
+                    </div>
+                </section>
+            {/if}
+
+            {#if wrongResults.length > 0}
+                <section
+                    class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+                >
+                    <div class="mb-4 space-y-1">
+                        <p
+                            class="text-xs font-semibold uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400"
+                        >
+                            Foute vragen
+                        </p>
+                        <h2 class="text-2xl font-semibold text-slate-900 dark:text-white">
+                            Overzicht van wat fout ging
+                        </h2>
+                        <p class="text-sm text-slate-600 dark:text-slate-300">
+                            Dit zijn de vragen die je nog eens moet nalopen.
+                        </p>
+                    </div>
+
+                    <div class="grid gap-4">
+                        {#each wrongResults as result (result.id)}
+                            <article
+                                class="rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-950"
+                            >
+                                <div
+                                    class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between"
+                                >
+                                    <div class="space-y-1">
+                                        <p
+                                            class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400"
+                                        >
+                                            Vraag {result.nummer}
+                                        </p>
+                                        <h3 class="text-lg font-semibold text-slate-900 dark:text-white">
+                                            {result.vraag}
+                                        </h3>
+                                    </div>
+
+                                    <div class="flex flex-wrap gap-2">
+                                        <div
+                                            class="rounded-xl bg-rose-100 px-3 py-2 text-sm text-rose-950 dark:bg-rose-950/40 dark:text-rose-100"
+                                        >
+                                            {result.score} / {result.punten}
+                                            punten
+                                        </div>
+                                        <button
+                                            class="rounded-xl border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-900 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-500"
+                                            onclick={() => goToQuestion(result.id)}
+                                        >
+                                            Open vraag
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mt-3 grid gap-2 text-sm text-slate-700 dark:text-slate-200">
+                                    {#if result.type === 'mcq'}
+                                        <p>
+                                            Juiste antwoord:
+                                            <span class="font-medium">
+                                                {result.correct_option?.toUpperCase()}.
+                                                {result.correct_option_text}
+                                            </span>
+                                        </p>
+                                    {/if}
+
+                                    {#if result.type === 'boolean' && result.stellingen}
+                                        {#each result.stellingen as statement (statement.id)}
+                                            <p>
+                                                <span class="font-medium">
+                                                    {statement.tekst}
+                                                </span>
+                                                · jouw antwoord:
+                                                {answerLabel(statement.selected_answer)}
+                                                · juist:
+                                                {answerLabel(statement.correct_answer)}
+                                            </p>
+                                        {/each}
+                                    {/if}
+
+                                    {#if result.type === 'ordering' && result.items}
+                                        {#each result.items as item (item.item)}
+                                            <p>
+                                                <span class="font-medium">
+                                                    {item.item}
+                                                </span>
+                                                · jouw positie:
+                                                {item.selected_position ?? 'geen'}
+                                                · juiste positie:
+                                                {item.expected_position}
+                                            </p>
+                                        {/each}
+                                    {/if}
+                                </div>
+
+                                {#if result.uitleg}
+                                    <p class="mt-3 border-t border-slate-200 pt-3 text-sm text-slate-700 dark:border-slate-700 dark:text-slate-200">
+                                        <span class="font-medium">Toelichting:</span>
+                                        {result.uitleg}
+                                    </p>
+                                {/if}
                             </article>
                         {/each}
                     </div>
